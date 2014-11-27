@@ -4,7 +4,7 @@ using System.Collections;
 public class FirstPersonController : MonoBehaviour {
 
 	CharacterController controller;
-	Camera view;
+	Camera camera;
 	public float speedMultiplier = 5;
 	public float terminalVelocity = 120;
 	public float jumpImpulse = 3;
@@ -15,7 +15,7 @@ public class FirstPersonController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController>();
-		view = GetComponentInChildren<Camera>();
+		camera = GetComponentInChildren<Camera>();
 	}
 	
 	// Update is called once per frame
@@ -47,7 +47,7 @@ public class FirstPersonController : MonoBehaviour {
 
 	private void Crouch(float height){
 		controller.height = height;
-		view.transform.position.Set(0,height,0);
+		camera.transform.position.Set(0,height,0);
 
 	}
 }

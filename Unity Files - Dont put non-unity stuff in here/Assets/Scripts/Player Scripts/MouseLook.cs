@@ -7,10 +7,10 @@ public class MouseLook : MonoBehaviour {
 	public float verticalMouseSensitivity = 7;
 	public float mouseAngleLimit = 80;
 	private float pitch = 0;
-	Camera view;
+	Camera camera;
 	// Use this for initialization
 	void Start () {
-		view = GetComponentInChildren<Camera> ();
+		camera = GetComponentInChildren<Camera> ();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,6 @@ public class MouseLook : MonoBehaviour {
 		transform.Rotate(0,Input.GetAxis("Mouse X")*horizontalMouseSensitivity,0);
 		pitch -= Input.GetAxis("Mouse Y") * verticalMouseSensitivity;
 		pitch = Mathf.Clamp(pitch, -mouseAngleLimit, mouseAngleLimit);
-		view.transform.localRotation = Quaternion.Euler(pitch, 0, 0);
+		camera.transform.localRotation = Quaternion.Euler(pitch, 0, 0);
 	}
 }
