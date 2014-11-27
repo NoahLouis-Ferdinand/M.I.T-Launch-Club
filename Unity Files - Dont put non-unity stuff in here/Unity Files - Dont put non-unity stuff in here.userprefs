@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player Scripts\InstantiateObjectOnInputAtCamera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Damage Scripts\HasHealth.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player Scripts\InstantiateObjectOnInputAtCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Interfaces\ICastable.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\Damage Scripts\HasHealth.cs" Line="19" Column="3" />
+      <File FileName="Assets\Scripts\Spell Scripts\ProjectileSpell.cs" Line="9" Column="25" />
+      <File FileName="Assets\Scripts\Player Scripts\Caster.cs" Line="11" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

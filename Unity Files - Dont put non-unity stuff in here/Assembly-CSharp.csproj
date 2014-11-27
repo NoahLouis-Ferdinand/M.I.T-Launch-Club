@@ -46,17 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Damage Scripts\HasHealth.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\ICastable.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
      <Compile Include="Assets\Scripts\Movement Scripts\LinearProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\OnImpactScripts\DestroyOnImpact.cs" />
-     <Compile Include="Assets\Scripts\OnImpactScripts\EffectOnImpact.cs" />
+     <Compile Include="Assets\Scripts\OnImpactScripts\InstantiateOnImpact.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\Caster.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\Scripts\Player Scripts\InstantiateObjectAtCameraOnInput.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Spell Scripts\ProjectileSpell.cs" />
      <Compile Include="Assets\Scripts\TimedLife.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{F94572C2-D58E-AC96-1CFE-3F0D20FDB3D9}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+     <Compile Include="Assets\_IMPORTS\PorglezompPyroclastics\ExplosionMat.cs" />
+     <Compile Include="Assets\_IMPORTS\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionHigh.shader" />
+     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionLow.shader" />
+     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionMed.shader" />
+     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
