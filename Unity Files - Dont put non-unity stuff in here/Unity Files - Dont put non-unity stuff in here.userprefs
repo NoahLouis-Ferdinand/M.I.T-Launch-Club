@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Destruction Scripts\DestroyOnParticleFinish.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player Specific Scripts\PlayerDeathHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\Destruction Scripts\DestroyOnParticleFinish.cs" Line="10" Column="2" />
-      <File FileName="Assets\Scripts\DestroyHandlers\InstantiateOnDestroy.cs" Line="8" Column="24" />
-      <File FileName="Assets\Scripts\Destruction Scripts\TimedLife.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\PlayerHealth.cs" Line="37" Column="45" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\PlayerDeathHandler.cs" Line="12" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

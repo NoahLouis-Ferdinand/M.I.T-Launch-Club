@@ -57,9 +57,18 @@
      <Compile Include="Assets\Scripts\Player Specific Scripts\Caster.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerDeathHandler.cs" />
+     <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Spell Scripts\LinearProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Spell Scripts\ProjectileSpell.cs" />
      <Compile Include="Assets\_IMPORTS\SimpleParticlePack\Scripts\ParticleTester.cs" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Alex/Documents/Dev/Git/MIT Launch/M.I.T-Launch-Club/Unity Files - Dont put non-unity stuff in here/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{E0ADA231-3EB6-B753-8673-6551A00BE859}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
