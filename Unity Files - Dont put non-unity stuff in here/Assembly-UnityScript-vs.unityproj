@@ -47,10 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_IMPORTS\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
-     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionHigh.shader" />
-     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionLow.shader" />
-     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\Shaders\ExplosionMed.shader" />
-     <None Include="Assets\_IMPORTS\PorglezompPyroclastics\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
