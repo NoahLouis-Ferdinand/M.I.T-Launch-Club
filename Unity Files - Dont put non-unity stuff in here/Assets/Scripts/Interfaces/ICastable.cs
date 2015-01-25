@@ -3,7 +3,10 @@ using System.Collections;
 
 public interface ICastable {
 	
-	float GetBaseManaCost();
+	float baseManaCost{ get; set; }
+	string userFriendlyName{ get; set; }
+	string castType{ get; set; }
+
 
 	void Cast(float magnitude, Vector3 position, Vector3 offset, Quaternion rotation);
 

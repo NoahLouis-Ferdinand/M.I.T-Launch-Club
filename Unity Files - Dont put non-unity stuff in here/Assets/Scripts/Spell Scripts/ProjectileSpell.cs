@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ProjectileSpell : MonoBehaviour, ICastable {
+public class ProjectileSpell : _BaseSpell {
 
-	// Use this for initialization
-
+	public GameObject castEffect;
 	public GameObject projectile;
-	public float baseManaCost;
 
-	public void Cast(float magnitude, Vector3 position, Vector3 offset, Quaternion rotation){
+	public override void Cast(float magnitude, Vector3 position, Vector3 offset, Quaternion rotation){
 		Instantiate (projectile,position+(rotation*offset),rotation);
+		Instantiate (castEffect,position+(rotation*offset),rotation);
 	} 
 
-	public float GetBaseManaCost(){
-		return baseManaCost;
+	void Start(){
+		this.castType = Caster.PROJECTILE;
 	}
+
 }

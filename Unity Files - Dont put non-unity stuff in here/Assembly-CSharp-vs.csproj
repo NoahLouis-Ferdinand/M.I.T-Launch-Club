@@ -51,16 +51,24 @@
      <Compile Include="Assets\Scripts\Destruction Scripts\DestroyOnImpact.cs" />
      <Compile Include="Assets\Scripts\Destruction Scripts\DestroyOnParticleFinish.cs" />
      <Compile Include="Assets\Scripts\Destruction Scripts\TimedLife.cs" />
+     <Compile Include="Assets\Scripts\GUI Element Scripts\GUI_Element.cs" />
+     <Compile Include="Assets\Scripts\GUI Element Scripts\GUI_Element_Bar_Horizontal.cs" />
+     <Compile Include="Assets\Scripts\GUI Element Scripts\GUI_Element_RequiresInput.cs" />
+     <Compile Include="Assets\Scripts\Graphical Effect Scripts\BounceDeform.cs" />
      <Compile Include="Assets\Scripts\Interfaces\ICastable.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDestroyable.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IFloatInput.cs" />
+     <Compile Include="Assets\Scripts\Interfaces\IQuantifiable.cs" />
      <Compile Include="Assets\Scripts\Movement Scripts\AddForceOnInstantiate.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\Caster.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerDeathHandler.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Spell Scripts\BeamSpell.cs" />
      <Compile Include="Assets\Scripts\Spell Scripts\ProjectileSpell.cs" />
+     <Compile Include="Assets\Scripts\Spell Scripts\_BaseSpell.cs" />
      <Compile Include="Assets\_IMPORTS\SimpleParticlePack\Scripts\ParticleTester.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
