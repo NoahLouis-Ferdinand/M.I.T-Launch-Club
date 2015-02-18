@@ -4,30 +4,26 @@ using System.Collections.Generic;
 
 public class Caster : MonoBehaviour {
 	
-	private ICastable[] spells;
-	public Vector3 offset;
+	private Component[] spells;
 	private Camera view;
-	public int selection = 0;
+	public bool castingEnabled = true;
 
 	void Start () {
-		view = GetComponentInParent<Camera>();
-		spells = (ICastable[]) gameObject.GetComponents (typeof(ICastable));
-		foreach(Component i in spells){
-			ICastable spell = (ICastable) i;
-			Debug.Log(spell.userFriendlyName);
-		}
-
+		spells = GetComponents(typeof(ICastable));
 	}
 
-	void Update () {
-		if(Input.GetButtonDown("Fire1")){
-			if(spells!=null){
-				ICastable spell = (ICastable) spells[selection];
-				spell.Cast(1, transform.position, offset, view.transform.rotation);
-			}else{
-				Debug.Log ("Failed attempting to cast spell at selection " + selection.ToString() + " because it was null!");
-			}
-
+	public void Cast(int selection){
+		if (castingEnabled) {
+			if (spells[selection] != null) {
+				ICastable spell = (ICastable)spells[selection];
+				spell.Cast (1, this.transform.position, transform.rotation);
+				Debug.Log("Cast Successful!");
+			} else {
+				Debug.Log ("Failed attempting to cast spell at selection " + selection.ToString () + " because it was null!");
+			}		
+		} 
+		else{
+			Debug.Log ("Couldnt Cast: Casting is disabled");
 		}
 	}
 

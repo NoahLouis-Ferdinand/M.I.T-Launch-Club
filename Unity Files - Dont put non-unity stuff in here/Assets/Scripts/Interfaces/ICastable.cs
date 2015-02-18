@@ -8,6 +8,6 @@ public interface ICastable {
 	string castType{ get; set; }
 
 
-	void Cast(float magnitude, Vector3 position, Vector3 offset, Quaternion rotation);
+	void Cast(float magnitude, Vector3 position, Quaternion rotation);
 
 }
