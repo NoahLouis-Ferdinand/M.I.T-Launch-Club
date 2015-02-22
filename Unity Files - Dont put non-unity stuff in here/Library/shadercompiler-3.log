@@ -1,33 +1,7 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-3-167984
+Pipe name: \\.\pipe\UnityShaderCompiler-3-148240
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=1 type=0 insize=4962 outsize=868 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+  api=8 type=0 insize=1063 outsize=2316 kw= ok=1
 Cmd: compileSnippet
-  api=1 type=0 insize=4962 outsize=1395 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=4962 outsize=1551 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=4962 outsize=6 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=4962 outsize=1973 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=2915 outsize=531 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=2915 outsize=693 kw=SPOT ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=2915 outsize=675 kw=POINT_COOKIE ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=2915 outsize=2891 kw=DIRECTIONAL_COOKIE ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=2915 outsize=6 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=2915 outsize=2436 kw=SPOT ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=2915 outsize=1729 kw=DIRECTIONAL_COOKIE ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=4647 outsize=910 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=4647 outsize=3232 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_ON ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=4647 outsize=460 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+  api=1 type=1 insize=1063 outsize=294 kw= ok=1

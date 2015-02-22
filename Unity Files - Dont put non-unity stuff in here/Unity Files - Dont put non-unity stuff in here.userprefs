@@ -1,10 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Graphical Effect Scripts\InstantiateOnContact.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player Specific Scripts\Controllers\MouseLookWithAnimation.cs">
     <Files>
-      <File FileName="Assets\Scripts\Graphical Effect Scripts\InstantiateOnContact.cs" Line="19" Column="27" />
-      <File FileName="Assets\Scripts\Player Specific Scripts\PlayerCastingController.cs" Line="20" Column="4" />
-      <File FileName="Assets\Scripts\Player Specific Scripts\Caster.cs" Line="16" Column="24" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\Controllers\MecanimBasedPlayerController.cs" Line="22" Column="37" />
+      <File FileName="Assets\Scripts\Navigation\NavigateToObject.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\Controllers\MouseLookWithAnimation.cs" Line="54" Column="44" />
+      <File FileName="Assets\Scripts\ThirdPersonCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Graphical Effect Scripts\InstantiateOnContact.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\PlayerCastingController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\Caster.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player Specific Scripts\Controllers\MouseLook.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -183,23 +183,23 @@ ModelImporter:
     - serializedVersion: 16
       name: RightStrafe
       takeName: _61_62__a_U1_M_P_RapidStrafeAvoid_ToLeft__Fb_p90_No_0_1
-      firstFrame: 222
-      lastFrame: 240
+      firstFrame: 161
+      lastFrame: 179
       wrapMode: 0
-      orientationOffsetY: -32.1800003
+      orientationOffsetY: 18.3999996
       level: 0
       cycleOffset: 0
       loop: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
-      loopBlendPositionY: 0
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
-      mirror: 0
+      mirror: 1
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []

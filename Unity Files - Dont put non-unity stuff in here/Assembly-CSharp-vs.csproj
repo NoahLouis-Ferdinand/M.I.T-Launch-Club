@@ -65,10 +65,12 @@
      <Compile Include="Assets\Scripts\Interfaces\IFloatInput.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IQuantifiable.cs" />
      <Compile Include="Assets\Scripts\Movement Scripts\AddForceOnInstantiate.cs" />
+     <Compile Include="Assets\Scripts\Navigation\NavigateToObject.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\Caster.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\Controllers\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\Controllers\MecanimBasedPlayerController.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\Controllers\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Player Specific Scripts\Controllers\MouseLookWithAnimation.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerCastingController.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerDeathHandler.cs" />
      <Compile Include="Assets\Scripts\Player Specific Scripts\PlayerHealth.cs" />
