@@ -1,31 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Script_Weapon_Base : MonoBehaviour {
+public class Script_Weapon_Base : Script_InventoryItem {
 
 	//All weapons should inherit from this class
 
-	public string userFriendlyName = "UNASSIGNED";
-	public float fireCooldown;
-	public bool isEnabled = true;
-	public Texture crossHair;
-	public Texture weaponIcon;
-	public Texture ammoIcon;
 
-	float nextFire;
+	public WeaponStats stats;
+	public bool isEnabled = true;
+	public float ammoInMag;
+	
+	public Vector3 instantiateOffset;
 
 	void Start() {
-		nextFire = Time.time;
 	}
 
-	public void DoCooldown(){
-		nextFire = Time.time + fireCooldown;
+	public virtual Transform GetFireTransform (){
+		Debug.LogError ("Oh Noes! Somebody is trying to use GetFireTransform, and it hasnt been overridden! someone go override this!");
+		return null;
 	}
 
-	public bool Cooldown(){
-		//will return true if the weapon can be used (cooldown)
-		return (Time.time >= nextFire);
+	public virtual void FireOnce (Quaternion fireAngle){
 
 	}
-	
 }

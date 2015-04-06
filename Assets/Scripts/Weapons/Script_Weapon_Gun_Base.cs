@@ -4,17 +4,20 @@ using System.Collections;
 public class Script_Weapon_Gun_Base : Script_Weapon_Base{
 
 	//all guns should inherit from this class
+
 	public AudioSource fireSoundSource;
 	public AudioClip fireSound;
-	public string firePosObjectName;
+	public ParticleSystem particle;
+
 	public Transform firePos;
 
-	//lesser values are more accurate
-	public float accuracy = 0;
+	public override Transform GetFireTransform(){
+		return firePos;
+	}
 
-	void Start() {
-		fireSoundSource = GetComponentInChildren<AudioSource> ();
-		firePos = transform.FindChild ("firePos").transform;
+	public void doFireEffects(){
+		particle.Play();
+		fireSoundSource.PlayOneShot(fireSound);
 	}
 
 

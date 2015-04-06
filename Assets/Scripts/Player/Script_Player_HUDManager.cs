@@ -4,49 +4,48 @@ using System.Collections;
 
 public class Script_Player_HUDManager : MonoBehaviour {
 
-	public RawImage[] slots;
+	Script_Player_InventoryManager inventory;
+	Script_Player_WeaponHandler weaponHandler;
+
+	public RawImage weaponSlot;
 	public RawImage ammoIcon;
+	public RawImage crosshair;
 	public Text ammoText;
 	public Text healthText;
-	float ammoClip = 0f;
-	float ammoStash = 0f;
+
+	public Text crosshairPromptText;
+	public RawImage crosshairPromptTexture;
+	public float commandPromptDuration;
+
+	public Texture emptyTexture;
+
+	float removePromptTime = 0;
 	
 	void Start(){
-		slots = new RawImage[4];
-	}
-	public void SetAmmoClip(float ammo){
-		ammoClip = ammo;
-		ammoText.text = (ammoClip + "/" + ammoStash);
+		inventory = GetComponent<Script_Player_InventoryManager> ();
+		weaponHandler = GetComponent<Script_Player_WeaponHandler> ();
 	}
 
-	public void SetAmmoStash(float ammo){
-		ammoStash = ammo;
-		ammoText.text = (ammoClip + "/" + ammoStash);
-	}
-
-	public void SetHealth(float health){
-		healthText.text = health.ToString ();
-	}
-
-	public void shuffleWeaponSlots(int amount){
-		Texture[] temp = new Texture[4];
-		int index;
-
-		for(int i = 0;i<slots.Length;i++) {
-			index = i+amount;
-			if (amount > slots.Length) {
-				amount = 0;
-			} else {
-				if (amount < 0) {
-					amount = slots.Length;
-				}
-			}
-			temp[i] = slots[index].texture;
+	void Update(){
+		ammoIcon.texture = inventory.weaponSlots[inventory.selectedPrimary].stats.ammoIcon;
+		ammoText.text = weaponHandler.selectedGun.ammoInMag + "/" + inventory.weaponTypes[inventory.selectedPrimary].currentAmmoStash;
+		weaponSlot.texture = inventory.weaponSlots[inventory.selectedPrimary].stats.weaponIcon;
+		crosshair.texture = inventory.weaponSlots [inventory.selectedPrimary].stats.crossHair;
+		if(Time.time >=removePromptTime){
+			crosshairPromptText.text = "";
+			crosshairPromptTexture.texture = emptyTexture;
 		}
-		for(int i = 0;i<slots.Length;i++) {
-			slots[i].texture = temp[i];
-		}
-		temp = null;
 	}
 
+	public void ShowCommandOption(string prompt,Texture texture){
+		crosshairPromptText.text = prompt;
+		crosshairPromptTexture.texture = texture;
+		removePromptTime = Time.time + commandPromptDuration;
+
+	}
+
+	public void SetCrosshairColor(Color color){
+		crosshair.color = color;
+	}
 }
+
