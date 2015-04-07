@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Physics\GravityManager.cs" />
      <Compile Include="Assets\Scripts\Animation Scripts\Script_Animation_FootPlacementIK.cs" />
      <Compile Include="Assets\Scripts\Destruction Events\Script_DestroyOnContact.cs" />
      <Compile Include="Assets\Scripts\Destruction Events\Script_DestructionEvent_Explode.cs" />
@@ -54,7 +55,8 @@
      <Compile Include="Assets\Scripts\Graphics Scripts\Script_Graphics_Billboard.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IDestroyEvent.cs" />
      <Compile Include="Assets\Scripts\Interfaces\IHoldable.cs" />
-     <Compile Include="Assets\Scripts\Player\Script_Player_Controller.cs" />
+     <Compile Include="Assets\Scripts\Player\Controllers\Script_Player_Controller.cs" />
+     <Compile Include="Assets\Scripts\Player\Controllers\Script_Player_ControllerVariableGravity.cs" />
      <Compile Include="Assets\Scripts\Player\Script_Player_HUDManager.cs" />
      <Compile Include="Assets\Scripts\Player\Script_Player_InteractionManager.cs" />
      <Compile Include="Assets\Scripts\Player\Script_Player_InventoryManager.cs" />

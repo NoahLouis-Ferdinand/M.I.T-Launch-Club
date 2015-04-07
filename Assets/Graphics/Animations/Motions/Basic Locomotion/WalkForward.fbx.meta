@@ -524,8 +524,8 @@ ModelImporter:
     - serializedVersion: 16
       name: WalkStraightRight
       takeName: _1_Edit1_WalkFWD
-      firstFrame: 15
-      lastFrame: 75
+      firstFrame: 30
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: -87.3199997
       level: 0
@@ -846,10 +846,10 @@ ModelImporter:
     - serializedVersion: 16
       name: WalkStraightLeft
       takeName: _1_Edit1_WalkFWD
-      firstFrame: 29
-      lastFrame: 59
+      firstFrame: 45
+      lastFrame: 75
       wrapMode: 0
-      orientationOffsetY: -87.3499985
+      orientationOffsetY: -87.3399963
       level: 0
       cycleOffset: 0
       loop: 0

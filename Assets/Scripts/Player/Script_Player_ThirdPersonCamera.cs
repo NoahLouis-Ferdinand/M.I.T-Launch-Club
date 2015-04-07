@@ -12,6 +12,7 @@ public class Script_Player_ThirdPersonCamera : MonoBehaviour {
 	public string camPosCenterName = "CamZoomCenter";
 	public bool isOnRight = true;
 	public float smooth = 0.0f;
+
 	Vector3 target;
 	Quaternion targetRotation;
 
@@ -34,6 +35,10 @@ public class Script_Player_ThirdPersonCamera : MonoBehaviour {
 		}else{
 			target = Vector3.Lerp (transform.position,camPosL.position,smooth);
 			targetRotation = camPosL.rotation;
+		}
+		RaycastHit hitInfo;
+		if(Physics.Linecast(camPosCenter.position,target,out hitInfo)){
+			target = hitInfo.point;
 		}
 		if(Input.GetKey (KeyCode.LeftControl)){
 			target = Vector3.Lerp (target,camPosCenter.position,0.3f);
